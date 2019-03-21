@@ -103,7 +103,7 @@ NDIS_STATUS DriverEntry(DRIVER_OBJECT *driver_object, UNICODE_STRING *registry_p
 	t.Header.Revision = NDIS_PROTOCOL_DRIVER_CHARACTERISTICS_REVISION_2;
 	t.Header.Size = NDIS_SIZEOF_PROTOCOL_DRIVER_CHARACTERISTICS_REVISION_2;
 	t.MajorNdisVersion = 6;
-	t.MinorNdisVersion = 20;
+	t.MinorNdisVersion = 30;
 	t.Name = protocol_name->String;
 
 	t.BindAdapterHandlerEx = SlNdisBindAdapterExProc;

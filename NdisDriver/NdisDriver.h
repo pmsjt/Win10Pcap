@@ -69,48 +69,16 @@
 #ifndef	SELOW_H
 #define	SELOW_H
 
-// Win32 DDK related
-#ifndef	CPU_64
-#ifndef _X86_
-#define	_X86_
-#endif
-#else	// CPU_64
-#ifndef	NEO_IA64
-#ifndef _AMD64_
-#define	_AMD64_
-#endif
-#ifndef AMD64
-#define	AMD64
-#endif
-#else	// NEO_IA64
-#define	_IA64_
-#define	IA64
-#endif	// NEO_IA64
-#endif	// CPU_64
 #define	NDIS_MINIPORT_DRIVER
 // NDIS 6.2
 
-#define	NDIS620_MINIPORT
-#define	NDIS_SUPPORT_NDIS61			1
-#define	NDIS_SUPPORT_NDIS620		1
-#define NEO_NDIS_MAJOR_VERSION		6
-#define NEO_NDIS_MINOR_VERSION		20
-#define	NDIS_WDM					1
-
+#define	NDIS630_MINIPORT
 
 #include <wdm.h>
 #include <wdmsec.h>
 #include <ndis.h>
 #include <stdio.h>
 #include <string.h>
-
-// OS determination
-#ifdef	WIN32
-#define	OS_WIN32	// Microsoft Windows
-#else
-#define	OS_UNIX		// UNIX / Linux
-#endif
-
 
 // Type declaration
 #ifndef	WINDOWS_H_INCLUDED
