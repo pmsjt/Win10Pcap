@@ -206,7 +206,7 @@
       <CompileAs>CompileAsC</CompileAs>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>Version.lib;winmm.lib;Iphlpapi.lib;Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Version.lib;winmm.lib;Iphlpapi.lib;advapi32.lib;Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)Packet.dll</OutputFile>
       <ModuleDefinitionFile>Packet.def</ModuleDefinitionFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
